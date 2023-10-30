@@ -1,0 +1,134 @@
+.main_page_decor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.wrapp_main_manu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 103px;
+
+    .left_block {
+        color: white;
+        font-family: 'Lexend', sans-serif;
+        margin-right: 120px;
+        
+        p:first-child {
+            font-size: 18px;
+            background-color: #262626;
+            border-radius: 61px;
+            display: inline;
+            padding: 10px 20px;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 500;
+            margin: 20px 0 14px 0;
+
+            span {
+                color: #CAFF33;
+            }
+        }
+        .description {
+            font-size: 18px;
+            line-height: 150%;
+            margin-bottom: 50px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            background-color: #CAFF33;
+            padding: 18px 30px;
+            border-radius: 82px;
+            border: solid 1px #CAFF33;
+            transition: all .2s ease-in-out;
+        }
+        a:hover {
+            background-color: transparent;
+            color: white;
+        }
+    }
+    .right_block {
+        font-family: 'Lexend', sans-serif;
+        color: white;
+        border: solid 1px #262626;
+        border-radius: 10px;
+        padding: 34px;
+        position: relative;
+        background-color: black;
+
+        .encome_img {
+            position: absolute;
+            left: -80px;
+            top: -50px;
+        }
+        .arrow_decor {
+            position: absolute;
+            right: -80px;
+            top: -40px;
+            z-index: -1;
+        }
+        p {
+            padding: 0 0 17px 0;
+        }
+        .header_text > p {
+            margin: 26px 0;
+        }
+        .wrapp_input {
+            display: flex;
+            justify-content: center;
+            font-family: 'Lexend', sans-serif;
+            border-radius: 10px;
+            border: solid 1px #262626;
+
+            .block_input {
+                border-right: solid 1px #262626;
+            }
+            .block_input, .block_output {
+                width: 222px;
+                
+                p {
+                    text-transform: uppercase;
+                    padding: 17px;
+
+                    img {
+                        padding-right: 8px;
+                        width: 37px;
+                    }
+                }
+                .name_currency {
+                    font-size: 14px;
+                    text-transform: none;
+                    border-bottom: solid 1px #262626;
+                    padding: 0 17px 17px 17px;
+
+                }
+                input {
+                    border: none;
+                    background-color: transparent;
+                    padding: 26px 17px;
+                    color: white;
+                    font-size: 18px;
+                }
+            }
+        }
+        .exchange_btn {
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            color: #D1FF4D;
+            background-color: #22251B;
+            margin-top: 25px;
+            padding: 13px 0;
+            border-radius: 71px;
+            transition: all .2s ease-in-out;
+        }
+        .exchange_btn:hover {
+            background-color: #D1FF4D;
+            color: black;
+        }
+    }
+}
