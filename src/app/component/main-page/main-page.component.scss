@@ -254,3 +254,159 @@
         }
     }
 }
+.wrapp_use_cases {
+    margin-top: 150px;
+
+    .block_text_two {
+        color: white;
+        width: 1000px;
+        font-family: 'Lexend', sans-serif;
+
+        h2 {
+            font-size: 48px;
+            margin-bottom: 14px;
+            color: #CAFF33;
+        }
+        p {
+            color: #B3B3B3;
+            line-height: 150%;
+            font-size: 18px;
+        }
+    }
+    .block_individuals {
+        display: flex;
+        justify-content: center;
+        font-family: 'Lexend', sans-serif;
+        margin-top: 80px;
+
+        
+        .left_block {
+            position: relative;
+
+            margin-right: 80px;
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(2, 314px);
+            grid-template-rows: repeat(2, 222px);
+            grid-gap: 20px;
+            padding: 50px;
+            background-color: #1C1C1C;
+            border-radius: 20px;
+
+            .Abstract_Design {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+            }
+            .img_one, .img_two,  .img_three, .img_four{
+                color: white;
+                text-align: center;
+                background-color: black;
+                padding: 30px 0 60px 0;
+                border-radius: 20px;
+                z-index: 2;
+
+                img {
+                    margin-bottom: 48px;
+                    background-color: #c4fa3122;
+                    border-radius: 100px;
+                    padding: 14px 17px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+        .right_block {
+            width: 748px;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            
+            h3 {
+                font-size: 30px;
+                margin-bottom: 14px;
+            }
+            p {
+                font-size: 18px;
+                color: #B3B3B3;
+                margin-bottom: 62px;
+                line-height: 150%;
+            }
+            .percentages {
+                display: flex;
+                justify-content: space-between;
+            }
+            .planing_item {
+                color: white;
+                width: 130px;
+
+                h2 {
+                    font-size: 58px;
+                    color: #CAFF33;
+                }
+                p {
+                    color: #B3B3B3;
+                    font-size: 18px;
+                    line-height: 150%;
+                }
+            }
+        }
+        .btn_learn_more > a {
+            text-decoration: none;
+            color: white;
+            background-color: #1C1C1C;
+            border: solid 1px #262626;
+            border-radius: 82px;
+            padding: 18px 24px;
+            transition: all .2s ease-in-out;
+        }
+        .btn_learn_more > a:hover {
+            background-color: #CAFF33;
+            color: black;
+        }
+    }
+}
+.for_busines {
+    margin-top: 60px;
+
+    .for_busines_left {
+        position: relative;
+
+        margin-left: 80px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 314px);
+        grid-template-rows: repeat(2, 222px);
+        grid-gap: 20px;
+        padding: 50px;
+        background-color: #1C1C1C;
+        border-radius: 20px;
+
+        .Abstract_Design {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+        .img_one, .img_two,  .img_three, .img_four{
+            color: white;
+            text-align: center;
+            background-color: black;
+            padding: 30px 0 60px 0;
+            border-radius: 20px;
+            z-index: 2;
+
+            img {
+                margin-bottom: 48px;
+                background-color: #c4fa3122;
+                border-radius: 100px;
+                padding: 14px 17px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
