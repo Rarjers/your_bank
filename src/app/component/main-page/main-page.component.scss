@@ -256,6 +256,12 @@
         }
     }
 }
+@mixin abstractDesign {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
 .wrapp_use_cases {
     margin-top: 150px;
 
@@ -296,10 +302,7 @@
             border-radius: 20px;
 
             .Abstract_Design {
-                position: absolute;
-                left: 0;
-                top: 0;
-                z-index: 1;
+                @include abstractDesign;
             }
             .img_one, .img_two,  .img_three, .img_four{
                 color: white;
@@ -374,7 +377,12 @@
 .center {
     text-align: center;
     margin-top: 50px;
+
+    img {
+        padding-left: 9px;
+    }
 }
+
 .for_busines {
     margin-top: 60px;
 
@@ -494,7 +502,89 @@
                 color: #B3B3B3;
             }
         }
+    }    
+}
+.wrapp_testimonials {
+    margin-top: 150px;
+
+    .block_sliders {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0 0 -50px;
+
+        .slider_item {
+            width: 320px;
+            color: white;
+            text-align: center;
+            margin-left: 50px;
+            font-family: 'Lexend', sans-serif;
+
+            p {
+                font-size: 18px;
+                line-height: 150%;
+                margin: 50px 0;
+            }
+            h6 {
+                font-size: 18px;
+                color: #CAFF33;
+                font-weight: 500;
+            }
+        }
+        .cursore_decor {
+            cursor: pointer;
+        }
+        #arrow_right_slider {
+            margin-left: 50px;
+            cursor: pointer;
+        }
     }
-    
-    
+}
+.wrapp_contact {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    border: solid 1px #262626;
+    border-radius: 20px;
+    position: relative;
+
+    .Abstract_Design {
+        @include abstractDesign;
+    }
+    .left_block_text {
+        font-family: 'Lexend', sans-serif;
+        width: 900px;
+        color: white;
+
+        h2 {
+            margin-bottom: 14px;
+
+            span {
+                color: #CAFF33;
+            }
+        }
+        p {
+            font-size: 18px;
+            color: #B3B3B3;
+        }
+    }
+    .right_block {
+
+        a {
+            text-decoration: none;
+            color: black;
+            background-color: #CAFF33;
+            border: solid 1px #CAFF33;
+            padding: 18px 30px;
+            border-radius: 80px;
+            transition: all .2s ease-in-out;
+        }
+        a:hover {
+            background-color: transparent;
+            border: solid 1px #CAFF33;
+            color: white;
+        }
+    }
 }

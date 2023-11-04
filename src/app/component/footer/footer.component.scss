@@ -1,0 +1,39 @@
+.wrapp_footer {
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    margin-top: 250px;
+
+    .footer_item {
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-left: -26px;
+            margin-top: 50px;
+            padding: 0;
+
+            li {
+                margin-left: 26px;
+                cursor: pointer;
+            }
+        }
+    }
+    .block_contact {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 0 -20px;
+        border-top: solid 1px #262626;
+        border-bottom: solid 1px #262626;
+        padding: 50px 0;
+
+        p {
+            margin-left: 20px;
+
+            img {
+                padding-right: 6px;
+            }
+        }
+    }
+}
