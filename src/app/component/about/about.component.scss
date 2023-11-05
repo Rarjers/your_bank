@@ -1,0 +1,145 @@
+.wrapp_header_block {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 90px;
+
+    .left_block {
+        font-family: 'Lexend', sans-serif;
+        color: white;
+        position: relative;
+        z-index: 2;
+        width: 678px;
+        background-color: #1A1A1A;
+        padding: 60px;
+        border-radius: 40px;
+        left: 40px;
+
+        h2 {
+            font-size: 48px;
+            font-weight: 500;
+
+            span {
+                color: #CAFF33;
+            }
+        }
+        p {
+            color: #B3B3B3;
+            line-height: 150%;
+            margin-top: 20px;
+        }
+    }
+    .right_block {
+        width: 715px;
+        position: absolute;
+        right: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+.header_mission {
+    font-family: 'Lexend', sans-serif;
+
+    h2 {
+        color: #CAFF33;
+        font-size: 38px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    p {
+        color: #B3B3B3;
+    }
+}
+.wrapp_mission {
+    margin-top: 221px;
+
+    
+    .block_mission {
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+
+        .left_block {
+            position: relative;
+            padding: 60px 60px 0 60px;
+            background-color: #1C1C1C;
+            border-radius: 30px;
+
+            .abstract_design {
+                position: absolute;
+                top: 0;
+                z-index: 1;
+            }
+            img:last-child {
+                position: relative;
+                z-index: 2;
+            }
+        }
+        .right_block {
+            font-family: 'Lexend', sans-serif;
+            color: white;
+            border-left: solid 1px #CAFF33;
+            padding-left: 40px;
+
+            h3 {
+                font-size: 32px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            p {
+                color: #B3B3B3;
+                line-height: 150%;
+            }
+        }
+        .border_right {
+            border-right: solid 1px #CAFF33;
+            padding:0 40px 0 0;
+            border-left: none;
+        }
+    }
+}
+.wrapp_releases {
+    margin-top: 120px;
+
+    .block_releases {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(630px, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        font-family: 'Lexend', sans-serif;
+        color: white;
+
+        .releases_item {
+            padding: 24px;
+            border: solid 1px #262626;
+            border-radius: 30px;
+
+            img {
+                width: 582px;
+            }
+            h3 {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 150%;
+                margin: 40px 0 14px 0;
+            }
+            .block_location {
+                display: flex;
+                margin-left: -6px;
+                color: #B3B3B3;
+                margin-bottom: 24px;
+                
+                p {
+                    margin-left: 6px;
+                }
+            }
+            p {
+                color: #B3B3B3;
+                line-height: 150%;
+            }
+        }
+    }
+}
