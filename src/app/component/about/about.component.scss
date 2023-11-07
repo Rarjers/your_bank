@@ -37,6 +37,13 @@
         img {
             width: 100%;
         }
+        .abstract {
+            position: absolute;
+            right: -50px;
+            top: -50px;
+            width: 350px;
+            z-index: -1;
+        }
     }
 }
 .header_mission {

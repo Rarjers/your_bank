@@ -1,0 +1,167 @@
+.wrapp_login {
+    display: flex;
+    justify-content: center;
+    border: solid 1px #262626;
+    border-radius: 16px;
+    max-width: 1064px;
+    width: 100%;
+    margin: 50px auto 0 auto;
+    position: relative;
+
+    .abstract_decor {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .block_login {
+        color: white;
+        text-align: center;
+        margin-top: 80px;
+        font-family: 'Lexend', sans-serif;
+        
+
+        .header_login {
+
+            h2 {
+                color: #CAFF33;
+                font-size: 38px;
+                font-weight: 500;
+                margin-bottom: 16px;
+            }
+            p {
+                color: #BFBFBF;
+            }
+        }
+    }
+    .block_form {
+        margin-top: 60px;
+        font-family: 'Lexend', sans-serif;
+        
+        form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .block_input {
+                margin-left: -24px;
+
+                input {
+                    width: 320px;
+                    height: 55px;
+                    border-radius: 88px;
+                    margin-left: 24px;
+                    padding: 20px;
+                    border: solid 1px #262626;
+                    background-color: transparent;
+                }
+                input::placeholder {
+                    color: #59595A;
+                }
+            }
+            a {
+                color: white;
+                margin: 30px 0;
+            }
+            @mixin sizeBtn {
+                height: 49px;
+                border-radius: 63px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+                width: 404px;
+            }
+            .login {
+                margin: 0 auto 24px auto;
+                background-color: #CAFF33;
+                border: solid 1px #CAFF33;
+                @include sizeBtn;
+            }
+            .login:hover {
+                background-color: transparent;
+                color: white;
+            }
+            .sign {
+                @include sizeBtn;
+                margin: 0 auto;
+                background-color: #333333;
+                border: solid 1px #333333;
+                color: white;
+            }
+            
+        }
+        .contineu {
+            margin: 24px 0;
+
+            p {
+
+                span {
+                    padding: 0 16px;
+                }
+            }
+        }
+        .variable_login {
+            display: flex;
+            justify-content: center;
+            margin: 0 0 80px -20px;
+
+            img {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+.block_text {
+    color: white;
+    width: 850px;
+    font-family: 'Lexend', sans-serif;
+
+    h2 {
+        font-size: 48px;
+        margin-bottom: 14px;
+
+        span {
+            color: #CAFF33;
+        }
+    }
+    p {
+        color: #B3B3B3;
+        line-height: 150%;
+        font-size: 18px;
+    }
+}
+.wrapp_testimonials {
+    margin-top: 150px;
+
+    .block_sliders {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0 0 -50px;
+
+        .slider_item {
+            width: 320px;
+            color: white;
+            text-align: center;
+            margin-left: 50px;
+            font-family: 'Lexend', sans-serif;
+
+            p {
+                font-size: 18px;
+                line-height: 150%;
+                margin: 50px 0;
+            }
+            h6 {
+                font-size: 18px;
+                color: #CAFF33;
+                font-weight: 500;
+            }
+        }
+        .cursore_decor {
+            cursor: pointer;
+        }
+        #arrow_right_slider {
+            margin-left: 50px;
+            cursor: pointer;
+        }
+    }
+}

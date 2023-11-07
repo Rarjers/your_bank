@@ -8,6 +8,8 @@ import { MainPageComponent } from './component/main-page/main-page.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { CarersPageComponent } from './component/carers-page/carers-page.component';
 import { AboutComponent } from './component/about/about.component';
+import { SecurityPageComponent } from './component/security-page/security-page.component';
+import { LoginPageComponent } from './component/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { AboutComponent } from './component/about/about.component';
     FooterComponent,
     CarersPageComponent,
     AboutComponent,
+    SecurityPageComponent,
+    LoginPageComponent,
   ],
   imports: [
     BrowserModule,
