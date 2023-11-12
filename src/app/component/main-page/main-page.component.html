@@ -195,28 +195,6 @@
             </div>
         </div>
     </div>
-    <div class="wrapp_asked">
-        <div class="block_text">
-            <h2><span>Frequently</span> Asked Questions</h2>
-            <p>Still you have any questions? Contact our Team via support@yourbank.com</p>
-        </div>
-        <div class="block_asked_text" id="block_asked_text" *ngFor = "let i of asketItems.slice(0, showAll ? asketItems.length : 2)">
-                <div class="asked_item">
-                    <h5>{{i.name}}</h5>
-                    <p>{{i.description}}</p>
-                </div>
-                <div class="asked_item">
-                    <h5>{{i.name}}</h5>
-                    <p>{{i.description}}</p>
-                </div>
-        </div>
-        
-        <div class="btn_learn_more center">
-            <a (click)="showAll = true">Load All FAQ’s <img src="/assets/main/arrow_down_btn.svg" alt="arrow"></a>
-        </div>
-    </div>
-
-<!-- main-page.component.html -->
 
 <div class="wrapp_testimonials">
     <div class="block_text">
@@ -225,11 +203,9 @@
     </div>
     <img class="cursore_decor" src="/assets/main/slider_arrow_left.svg" alt="arrow_left" (click)="prevSlide()">
     
-    <ngb-carousel [showNavigationArrows]="false" [activeId]="currentIndex">
         <ng-template ngbSlide *ngFor="let item of sliderItems; let i = index">
           <img [src]="item.image" alt="feedback">
         </ng-template>
-      </ngb-carousel>
   
     <img id="arrow_right_slider" src="/assets/main/slider_arrow_right.svg" alt="arrow_right" (click)="nextSlide()">
   </div>
