@@ -1,0 +1,131 @@
+@media (max-width: 1250px) {
+    .wrapp_main_manu {
+        flex-direction: column;
+    }
+    .wrapp_main_manu .left_block {
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 120px;
+    }
+    .wrapp_our_product .wrapp_header_product {
+        flex-direction: column;
+    }
+    .block_text {
+        margin-bottom: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .wrapp_our_product .wrapp_product_item {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .wrapp_our_product .wrapp_product_item .product_item {
+        margin-left: 0;
+        margin-top: 100px;
+        width: 338px;
+    }
+    .wrapp_use_cases .block_text_two {
+        text-align: center;
+    }
+    .wrapp_use_cases .block_text_two {
+        width: 100%;
+    }
+    .wrapp_use_cases .block_individuals {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapp_use_cases .block_individuals .right_block {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .wrapp_use_cases .block_individuals .left_block {
+        margin-right: 0px;
+    }
+    .wrapp_use_cases .block_individuals .right_block .percentages {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapp_use_cases .for_busines {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    .for_busines .for_busines_left {
+        margin-left: 0px;
+    }
+    .wrapp_features .wrapp_info_block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapp_features .wrapp_info_block .left_block {
+        margin: 50px 0;
+    }
+    .wrapp_features .right_block {
+        grid-template-columns: repeat(1, 514px);
+    }
+    .wrapp_asked .block_asked_text {
+        grid-template-columns: repeat(1, minmax(582px, 1fr));
+    }
+    .wrapp_contact {
+        flex-direction: column;
+        text-align: center;
+    }
+    .right_block {
+        margin-top: 36px;
+    }
+    .wrapp_contact .left_block_text {
+        width: 100%;
+    }
+}
+@media (max-width: 900px) {
+    .block_text {
+        width: 100%;
+    }
+    .wrapp_use_cases .block_individuals .right_block {
+        width: 100%;
+    }
+    .for_busines .for_busines_left, .wrapp_use_cases .block_individuals .left_block {
+        grid-template-columns: repeat(1, 314px);
+    }
+    
+}
+@media (max-width: 670px) {
+    .wrapp_main_manu .right_block .arrow_decor {
+        right: -37px;
+    }
+    .wrapp_main_manu .right_block .encome_img {
+        left: -32px;
+    }
+    .main_page_decor {
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .wrapp_main_manu .supported_currency {
+        right: 36px;
+    }
+    .wrapp_main_manu .right_block .arrow_decor {
+        right: 0px;
+    }
+    .wrapp_main_manu .right_block .encome_img {
+        left: 0px;
+    }
+    .wrapp_main_manu .right_block {
+        width: 100%;
+    }
+    .adapt_width {
+        width: 100%;
+    }
+    .wrapp_features .right_block {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .wrapp_main_manu .right_block .wrapp_input .block_input input, .wrapp_main_manu .right_block .wrapp_input .block_output input {
+        width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .wrapp_main_manu .left_block p:first-child {
+        font-size: 14px;
+    }
+}

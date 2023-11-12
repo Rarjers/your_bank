@@ -15,5 +15,16 @@
             <a routerLink="/sign">Sign Up</a>
             <a routerLink="/login">Login</a>
         </div>
+        <div class="burger_menu_wrapp">
+            <img (click)="showBurger()" src="/assets/header/burger_menu.svg" alt="burger icon">
+            <div class="burger_element" *ngIf="isBurgerMenuVisible">
+                <p routerLink="/">Home</p>
+                <p routerLink="/carers">Careers</p>
+                <p routerLink="/about">About</p>
+                <p routerLink="/security">Security</p>
+                <p routerLink="/sign">Sign Up</p>
+                <p routerLink="/login">Login</p>
+            </div>
+        </div>
     </div>
 </div>

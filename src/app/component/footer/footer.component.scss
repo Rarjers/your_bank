@@ -72,3 +72,12 @@
         }
     }
 }
+@media (max-width: 900px) {
+    .wrapp_footer .last_footer_item {
+        flex-direction: column;
+        margin-top: 26px;
+    }
+    .wrapp_footer .last_footer_item .block_text {
+        margin: 26px 0;
+    }
+}

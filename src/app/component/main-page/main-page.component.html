@@ -14,7 +14,7 @@
                 <img class="encome_img" src="/assets/main/encome.png" alt="encome">
                 <img class="arrow_decor" src="/assets/main/arrow_decor.png" alt="arrow_decor">
                 <p>Your Transactions</p>
-                <img src="/assets/main/transition.png" alt="transition">
+                <img class="adapt_width" src="/assets/main/transition.png" alt="transition">
                 <div class="block_exchange">
                     <div class="header_text">
                         <p>Money Exchange</p>
@@ -195,23 +195,27 @@
             </div>
         </div>
     </div>
-
-<div class="wrapp_testimonials">
-    <div class="block_text">
-      <h2>Our <span>Testimonials</span></h2>
-      <p>Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey</p>
+    <div class="wrapp_asked">
+        <div class="block_text">
+            <h2><span>Frequently</span> Asked Questions</h2>
+            <p>Still you have any questions? Contact our Team via support&#64;yourbank.com</p>
+        </div>
+        <div class="block_asked_text" id="block_asked_text" *ngFor = "let i of asketItems.slice(0, showAll ? asketItems.length : 2)">
+                <div class="asked_item">
+                    <h5>{{i.name}}</h5>
+                    <p>{{i.description}}</p>
+                </div>
+                <div class="asked_item">
+                    <h5>{{i.name}}</h5>
+                    <p>{{i.description}}</p>
+                </div>
+        </div>
+        
+        <div class="btn_learn_more center">
+            <a (click)="showAll = true">Load All FAQ’s <img src="/assets/main/arrow_down_btn.svg" alt="arrow"></a>
+        </div>
     </div>
-    <img class="cursore_decor" src="/assets/main/slider_arrow_left.svg" alt="arrow_left" (click)="prevSlide()">
-    
-        <ng-template ngbSlide *ngFor="let item of sliderItems; let i = index">
-          <img [src]="item.image" alt="feedback">
-        </ng-template>
-  
-    <img id="arrow_right_slider" src="/assets/main/slider_arrow_right.svg" alt="arrow_right" (click)="nextSlide()">
-  </div>
-  
-  
-  
+
     <div class="wrapp_contact">
         <img class="Abstract_Design" src="/assets/main/Abstract_Design.svg" alt="Abstract_Design">
         <div class="left_block_text">

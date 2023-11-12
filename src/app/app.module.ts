@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -29,7 +28,6 @@ import { SingPageComponent } from './component/sing-page/sing-page.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

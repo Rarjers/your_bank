@@ -1,19 +1,15 @@
 import { Component } from '@angular/core';
-import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 
 interface asketText {
   name: string,
   description: string,
 }
-interface SliderItem {
-  image: string;
-}
 
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.scss'],
+  styleUrls: ['./main-page.component.scss', './main-page.adapt.scss'],
 })
 export class MainPageComponent {
 
@@ -28,46 +24,4 @@ export class MainPageComponent {
     {name: "How can I access my accounts online?", description: "Accessing your accounts online is simple and secure. Visit our website and click on the 'Login' button. Enter your username and password to access your accounts. If you haven't registered for online banking, click on the 'Enroll Now' button and follow the registration process. If you need assistance, our customer support team is available to guide you."},
     {name: "How can I access my accounts online?", description: "Accessing your accounts online is simple and secure. Visit our website and click on the 'Login' button. Enter your username and password to access your accounts. If you haven't registered for online banking, click on the 'Enroll Now' button and follow the registration process. If you need assistance, our customer support team is available to guide you."},
   ]
-
-
-  currentIndex = 0;
-
-  sliderItems: SliderItem[] = [
-    {
-      image: '/assets/main/feedback_icon.svg',
-    },
-    {
-      image: '/assets/main/feedback_icon.svg',
-    },
-    {
-      image: '/assets/main/feedback_icon.svg',
-    },
-    {
-      image: '/assets/main/feedback_icon.svg',
-    },
-    {
-      image: '/assets/main/feedback_icon.svg',
-    },
-    {
-      image: '/assets/main/feedback_icon.svg',
-    },
-    {
-      image: '/assets/main/feedback_icon.svg',
-    },
-    {
-      image: '/assets/carers/header.png',
-    },
-    
-    
-    // Add more items as needed
-  ];
-  nextSlide() {
-    this.currentIndex = (this.currentIndex + 1) % this.sliderItems.length;
-  }
-
-  prevSlide() {
-    this.currentIndex = (this.currentIndex - 1 + this.sliderItems.length) % this.sliderItems.length;
-  }
-
-
 }

@@ -62,3 +62,25 @@
         }
     }
 }
+.burger_menu_wrapp {
+    position: relative;
+
+    img {
+        background-color: #CAFF33;
+        padding: 6px 14px;
+        border-radius: 82px;
+        cursor: pointer;
+    }
+    .burger_element {
+        font-family: 'Lexend', sans-serif;
+        color: white;
+        position: absolute;
+        top: 53px;
+        right: 20px;
+        line-height: 200%;
+        background-color: #1C1C1C;
+        padding: 10px 30px;
+        border-radius: 15px;
+        z-index: 9999999;
+    }
+}
