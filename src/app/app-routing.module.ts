@@ -5,6 +5,7 @@ import { CarersPageComponent } from './component/carers-page/carers-page.compone
 import { AboutComponent } from './component/about/about.component';
 import { SecurityPageComponent } from './component/security-page/security-page.component';
 import { LoginPageComponent } from './component/login-page/login-page.component';
+import { SingPageComponent } from './component/sing-page/sing-page.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent},
@@ -12,6 +13,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'security', component: SecurityPageComponent},
   { path: 'login', component: LoginPageComponent},
+  { path: 'sign', component: SingPageComponent},
+
 ];
 
 @NgModule({

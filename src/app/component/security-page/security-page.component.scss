@@ -121,28 +121,33 @@
 
     .block_asked_text {
         margin-top: 130px;
-        height: 697px;
         display: grid;
-        grid-template-columns:  repeat(2, minmax(582px, 1fr));
+        grid-template-columns: repeat(2, minmax(582px, 1fr));
         grid-template-rows: auto;
         grid-gap: 30px;
         justify-content: center;
+        height: 100%;  // Применяем высоту к родительскому контейнеру
         overflow: hidden;
 
         .asked_item {
             color: white;
             font-family: 'Lexend', sans-serif;
-            padding: 50px;
             border: solid 1px #262626;
             border-radius: 14px;
+            overflow: hidden;
 
             h5 {
                 font-size: 20px;
                 margin-bottom: 60px;
+                padding: 50px;
+                margin: 0;
             }
+
             p {
                 color: #B3B3B3;
+                padding: 0 50px 50px;
+                margin: 0;
             }
         }
-    }    
+    }
 }

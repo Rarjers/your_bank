@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,7 @@ import { CarersPageComponent } from './component/carers-page/carers-page.compone
 import { AboutComponent } from './component/about/about.component';
 import { SecurityPageComponent } from './component/security-page/security-page.component';
 import { LoginPageComponent } from './component/login-page/login-page.component';
+import { SingPageComponent } from './component/sing-page/sing-page.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +24,12 @@ import { LoginPageComponent } from './component/login-page/login-page.component'
     AboutComponent,
     SecurityPageComponent,
     LoginPageComponent,
+    SingPageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlickCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

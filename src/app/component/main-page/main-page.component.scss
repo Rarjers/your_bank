@@ -479,67 +479,78 @@
 
     .block_asked_text {
         margin-top: 130px;
-        height: 697px;
         display: grid;
-        grid-template-columns:  repeat(2, minmax(582px, 1fr));
+        grid-template-columns: repeat(2, minmax(582px, 1fr));
         grid-template-rows: auto;
         grid-gap: 30px;
         justify-content: center;
+        height: 100%;  // Применяем высоту к родительскому контейнеру
         overflow: hidden;
 
         .asked_item {
             color: white;
             font-family: 'Lexend', sans-serif;
-            padding: 50px;
             border: solid 1px #262626;
             border-radius: 14px;
+            overflow: hidden;
 
             h5 {
                 font-size: 20px;
                 margin-bottom: 60px;
+                padding: 50px;
+                margin: 0;
             }
+
             p {
                 color: #B3B3B3;
+                padding: 0 50px 50px;
+                margin: 0;
             }
-        }
-    }    
-}
-.wrapp_testimonials {
-    margin-top: 150px;
-
-    .block_sliders {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 100px 0 0 -50px;
-
-        .slider_item {
-            width: 320px;
-            color: white;
-            text-align: center;
-            margin-left: 50px;
-            font-family: 'Lexend', sans-serif;
-
-            p {
-                font-size: 18px;
-                line-height: 150%;
-                margin: 50px 0;
-            }
-            h6 {
-                font-size: 18px;
-                color: #CAFF33;
-                font-weight: 500;
-            }
-        }
-        .cursore_decor {
-            cursor: pointer;
-        }
-        #arrow_right_slider {
-            margin-left: 50px;
-            cursor: pointer;
         }
     }
 }
+
+.wrapp_testimonials {
+    margin-top: 150px;
+    position: relative;
+    overflow: hidden;
+
+    .block_sliders {
+        display: flex;
+        justify-content: space-between; // Изменено на space-between
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        margin: 100px auto 0 auto;
+        box-sizing: border-box;
+    
+        .slider_item {
+            text-align: center;
+            vertical-align: top;
+            width: calc(100% / 3 - 20px); // Изменено
+            margin-right: 20px; // Изменено
+            transition: transform 0.5s ease-in-out;
+            box-sizing: border-box;
+        }
+    }
+    
+    
+
+    .cursore_decor {
+        cursor: pointer;
+        position: absolute;
+        top: 247px;
+    }
+
+    #arrow_right_slider {
+        cursor: pointer;
+        right: 0;
+        top: 247px;
+        position: absolute;
+    }
+}
+
+
 .wrapp_contact {
     margin-top: 150px;
     display: flex;
