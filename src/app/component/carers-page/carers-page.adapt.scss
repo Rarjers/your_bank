@@ -1,0 +1,51 @@
+@media (max-width: 1200px) {
+    .wrapp_header_block {
+        display: flex;
+        position: relative;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .wrapp_header_block .right_block {
+        width: 715px;
+        position: relative;
+    }
+    .wrapp_header_block .left_block {
+        left: 0;
+        top: -90px;
+        text-align: center;
+    }
+    .wrapp_values {
+        margin-top: 80px;
+    }
+    .head_text {
+        text-align: center;
+    }
+    .wrapp_values .block_values, .wrapp_benefits .block_benefits, .wrapp_job .job_blocks, .wrapp_asked .block_asked_text  {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .block_text {
+        text-align: center;
+        width: 100%;
+    }
+    .wrapp_contact {
+        flex-direction: column;
+        text-align: center;
+    }
+    .wrapp_contact .left_block_text {
+        margin-bottom: 30px;
+    }
+    .wrapp_contact .left_block_text {
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .wrapp_header_block .right_block .abstract {
+        right: 0;
+    }
+    .wrapp_header_block .right_block {
+        width: 100%;
+    }
+    .wrapp_header_block .left_block {
+        width: 100%;
+    }
+}

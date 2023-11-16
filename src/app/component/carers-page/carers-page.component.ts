@@ -8,7 +8,7 @@ interface asketText {
 @Component({
   selector: 'app-carers-page',
   templateUrl: './carers-page.component.html',
-  styleUrls: ['./carers-page.component.scss']
+  styleUrls: ['./carers-page.component.scss', './carers-page.adapt.scss']
 })
 export class CarersPageComponent {
   showAll = false;
