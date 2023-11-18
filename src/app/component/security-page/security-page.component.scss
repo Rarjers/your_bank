@@ -151,3 +151,22 @@
         }
     }
 }
+.block_text {
+    color: white;
+    width: 850px;
+    font-family: 'Lexend', sans-serif;
+
+    h2 {
+        font-size: 48px;
+        margin-bottom: 14px;
+
+        span {
+            color: #CAFF33;
+        }
+    }
+    p {
+        color: #B3B3B3;
+        line-height: 150%;
+        font-size: 18px;
+    }
+}

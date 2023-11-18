@@ -1,0 +1,24 @@
+@media (max-width: 690px) {
+    .wrapp_login .block_form form .block_input {
+        margin-top: -20px;
+    }
+    .wrapp_login .block_form form .block_input input {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 450px) {
+    .wrapp_login .block_form .contineu > p > img {
+        display: none;
+    }
+    .wrapp_login .block_form form .login, .wrapp_login .block_form form .sign {
+        width: 100%;
+    }
+    .wrapp_login .block_form form .block_input input {
+        width: 100%;
+        padding: 20px 0 20px 20px;
+        margin: 20px 0 0 0;
+    }
+    .wrapp_login .block_form form .block_input {
+        margin: -20px 0 0 0;
+    }
+}

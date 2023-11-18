@@ -8,7 +8,7 @@ interface asketText {
 @Component({
   selector: 'app-security-page',
   templateUrl: './security-page.component.html',
-  styleUrls: ['./security-page.component.scss']
+  styleUrls: ['./security-page.component.scss', './security-page.adapt.scss']
 })
 export class SecurityPageComponent {
   showAll = false;
